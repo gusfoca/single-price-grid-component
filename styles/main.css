@@ -36,28 +36,44 @@ html {
 }
 
 main {
-    margin: 100px calc(15px + 5%);
+    --margin-side: calc(34.74vw - 98.28px);
+    margin: calc(40.31px + 8.45vw) var(--margin-side) calc(46.72px + 8.08vw) var(--margin-side);
     max-width: max-content;
+    
     outline: solid 1px green;    
 }
 
 section {
-    padding: 20px;    
+    padding: 20px; 
+}
+
+.intro {
+    height: calc(284.61px - 4.69vw);
 }
 
 .details {
+    /* 
+        "overflow: hidden" creates a block-formatting context to
+        contain the float element .why-us
+
+        This method is compatible with older browsers (contrasting 
+        with "display: flow-root")
+    */
     overflow: hidden;
     max-width: max-content;
+    --child-width: calc(308.53px + 0.657vw);
 }
 
 .subscription {
     display: inline-block;
-    width: 300px;    
+    width: var(--child-width);    
+    height: calc(214.03px + 3.19vw);
 }
 
 .why-us {    
     float: right;
-    width: 300px;
+    width: var(--child-width);
+    height: calc(214.03px + 3.19vw);
 }
 /*                                    End of Container layout  
 /*==========================================================*/
