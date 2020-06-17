@@ -23,10 +23,6 @@
     padding: 0;
 }
 
-html {
-    font-family: karla, sans-serif;
-}
-
 /*                                      ____________________
 /*======================================    Container layout
 */
@@ -82,6 +78,65 @@ section {
 /*                                      ____________________
 /*======================================    Inner layout
 */
+
+html {
+    font-family: karla, sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 1.15rem;
+    font-weight: bold;
+    letter-spacing: 0.0375rem;
+}
+
+h2 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 0;
+}
+
+.intro > p:first-of-type {
+    font-size: 0.95rem;
+    line-height: 1.22rem;
+}
+
+.intro p {
+    font-size: 0.85rem;
+    letter-spacing: 0;
+    line-height: 1.6rem;
+}
+
+.subscription p:last-of-type {
+    font-size: 0.95rem;
+    letter-spacing: 0.01rem;
+}
+
+.sub-price span:last-child {
+    font-size: 0.94rem;
+    vertical-align: middle;
+    word-spacing: initial;
+}
+
+.sub-price {
+    font-size: 2rem;
+    font-weight: bold;    
+    word-spacing: 0.15rem;
+}
+
+.subscription .button {
+    font-weight: bold;
+    width: 265px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.why-us {
+    font-size: 0.85rem;
+    letter-spacing: 0;
+    line-height: 1.25rem;
+}
 
 .attribution {
     width: 100%;
