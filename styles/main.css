@@ -39,10 +39,6 @@ main {
     outline: solid 1px green;    
 }
 
-section {
-    padding: 20px; 
-}
-
 .intro {
     height: calc(284.61px - 4.69vw);
 }
@@ -84,21 +80,33 @@ html {
     font-size: 16px;
 }
 
+
+section {
+    padding: 25px 25px; 
+}
+
 h1 {
     font-size: 1.15rem;
     font-weight: bold;
     letter-spacing: 0.0375rem;
+    margin-bottom: 25px;
 }
 
 h2 {
     font-size: 1.1rem;
     font-weight: bold;
     letter-spacing: 0;
+    margin-bottom: 18px;
+}
+
+.intro {
+    padding-top: 28px;
 }
 
 .intro > p:first-of-type {
     font-size: 0.95rem;
     line-height: 1.22rem;
+    margin-bottom: 18px;
 }
 
 .intro p {
@@ -110,6 +118,7 @@ h2 {
 .subscription p:last-of-type {
     font-size: 0.95rem;
     letter-spacing: 0.01rem;
+    margin-bottom: 28px;
 }
 
 .sub-price span:last-child {
@@ -122,6 +131,8 @@ h2 {
     font-size: 2rem;
     font-weight: bold;    
     word-spacing: 0.15rem;
+    line-height: 2rem;
+    margin-bottom: 10px;
 }
 
 .subscription .button {
