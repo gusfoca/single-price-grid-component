@@ -86,9 +86,9 @@ section {
 }
 
 h1 {
-    font-size: 1.15rem;
+    font-size: calc(0.4657vw + 16.6535px);
     font-weight: bold;
-    letter-spacing: 0.0375rem;
+    letter-spacing:calc(0.81127px - 0.056338vw);
     margin-bottom: 25px;
 }
 
@@ -104,20 +104,23 @@ h2 {
 }
 
 .intro > p:first-of-type {
-    font-size: 0.95rem;
+    font-size: calc(0.22535vw + 14.355px); /* 0.95:1.1rem */
+    letter-spacing: calc(0.03286vw - 0.12324px);  /* 0:0.35px */
     line-height: 1.22rem;
     margin-bottom: 18px;
+    width: 100%;
 }
 
-.intro p {
-    font-size: 0.85rem;
-    letter-spacing: 0;
+.intro p {    
+    font-size: calc(0.1802817vw + 12.92395px);     /* 0.85:0.97rem */
+    letter-spacing: calc(0.0032864vw - 0.012324px);  /* 0:0.035px */
     line-height: 1.6rem;
+    width: min(100%, 558px);
 }
 
 .subscription p:last-of-type {
     font-size: 0.95rem;
-    letter-spacing: 0.01rem;
+    letter-spacing: 0;
     margin-bottom: 28px;
 }
 
@@ -137,7 +140,7 @@ h2 {
 
 .subscription .button {
     font-weight: bold;
-    width: 265px;
+    width: calc(274.507px - 2.5352113vw);       /* 265:238px */
     height: 50px;
     line-height: 50px;
     text-align: center;
