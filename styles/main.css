@@ -43,11 +43,10 @@ main {
     --main-border-radius: calc(0.2816901vw + 3.94366px);
     border-radius: var(--main-border-radius);
     background-color: white;
-    /* outline: solid 1px green;     */
 }
 
 .intro {
-    height: max(217, calc(284.61px - 4.69vw));
+    height: max(217px, calc(284.61px - 4.69vw));
 }
 
 .details {
@@ -94,7 +93,9 @@ html {
 
 
 section {
-    padding: 25px 25px; 
+    --section-padding-side: min(40px, calc(1.4084507vw + 19.71831px));     /* 25:40px */
+    padding-left: var(--section-padding-side);
+    padding-right: var(--section-padding-side);
 }
 
 h1 {
@@ -113,7 +114,7 @@ h2 {
 }
 
 .intro {
-    padding-top: 28px;
+    padding-top: min(40px, calc(1.1267606vw + 23.775px));      /* 28:40px */
 }
 
 .intro > p:first-of-type {
@@ -121,7 +122,7 @@ h2 {
     font-weight: bold;
     letter-spacing: calc(0.03286vw - 0.12324px);  /* 0:0.35px */
     line-height: 1.22rem;
-    margin-bottom: 18px;
+    margin-bottom: max(12px, calc(20.1126761px - 0.5633803vw));        /* 18:12px */
     width: 100%;
     color: hsl(71, 73%, 54%);
 }
@@ -136,6 +137,11 @@ h2 {
 
 .details {
     color: white;
+}
+
+.subscription,
+.why-us {
+    padding-top: min(40px, calc(1.4084507vw + 19.71831px));;
 }
 
 .subscription p:last-of-type {
