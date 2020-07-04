@@ -47,7 +47,7 @@ main {
 }
 
 .intro {
-    height: calc(284.61px - 4.69vw);
+    height: max(217, calc(284.61px - 4.69vw));
 }
 
 .details {
